@@ -67,4 +67,4 @@ jobs:
           push: true
           tags: |
             jkbys/cloudflare-ddns-multi:latest
-            ghcr.io/jkbys/docker-cloudflare-ddns-multi:latest
+            ghcr.io/jkbys/cloudflare-ddns-multi:latest
