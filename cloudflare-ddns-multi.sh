@@ -4,8 +4,8 @@
 
 app_name="Cloudflare DDNS Multiple Zone/Record Updater"
 
-user_conf_file='.config/cloudflare-multi-ddns/config.json'
-system_conf_file='/etc/cloudflare-multi-ddns/config.json'
+user_conf_file='.config/cloudflare-ddns-multi/config.json'
+system_conf_file='/etc/cloudflare-ddns-multi/config.json'
 
 default_interval_sec=300
 min_interval_sec=10
