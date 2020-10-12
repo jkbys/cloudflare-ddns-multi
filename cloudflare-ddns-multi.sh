@@ -1,7 +1,5 @@
 #!/bin/sh
 
-# CloudFlare Multi-Zone DDNS Updater in ash (tested with BusyBox and dash)
-
 app_name="Cloudflare DDNS Multiple Zone/Record Updater"
 
 user_conf_file='.config/cloudflare-ddns-multi/config.json'
@@ -213,10 +211,11 @@ cleanup() {
 run_commands() {
   [ -z "$1" ] && return
   commands=$1
+  message=$(echo "$2" | sed 's/#/\\#/g')
   commands_len=$(echo "$1" | jq 'length')
   [ "$commands_len" -le 0 ] && return
   for commands_i in $( seq 0 $((commands_len - 1)) ); do
-    command=$(echo "$commands" | jq -r ".[$commands_i]" | sed "s/%MESSAGE%/$2/g")
+    command=$(echo "$commands" | jq -r ".[$commands_i]" | sed "s#%MESSAGE%#$2#g")
     debug "command: $command"
     command="$command 2>&1"
     output=$(timeout "$command_timeout" sh -c "$command")
@@ -457,9 +456,6 @@ while true; do
       [ -n "$command_ipv6" ] && fixed_ipv6=$(eval "$command_ipv6")
       debug "fixed_ipv4: $fixed_ipv4"
       debug "fixed_ipv6: $fixed_ipv6"
-
-      remove_on_stop=$(echo "$record" | jq .remove_on_stop)
-      debug "remove_on_stop: $remove_on_stop"
 
       tlen=$(echo "$types" | jq length)
       debug "tlen: $tlen"
