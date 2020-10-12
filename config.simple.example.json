@@ -1,0 +1,26 @@
+{
+  "zones": [
+    {
+      "name": "example.com",
+      "api_token": "your api token here",
+      "records": [
+        {
+          "name": "@",
+          "types": [
+            "A"
+          ],
+          "proxied": true,
+          "create": true
+        },
+        {
+          "name": "home",
+          "types": [
+            "A"
+          ],
+          "proxied": false,
+          "create": true
+        }
+      ]
+    }
+  ]
+}

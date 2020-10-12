@@ -1,0 +1,116 @@
+{
+  "interval_sec": 300,
+  "interval_after_fail_sec": 1800,
+  "cache_timeout_sec": 3600,
+  "enable_ipv4": true,
+  "enable_ipv6": true,
+  "_ipv4_ipv6_command_type": "'curl', 'drill' or 'dig'. add drill or dig package on the container or the system as needed",
+  "ipv4_command_type": "curl",
+  "ipv6_command_type": "curl",
+  "custom_command_get_ipv4_address": "",
+  "custom_command_get_ipv6_address": "",
+  "_oneshot": "if true, run once and exit",
+  "oneshot": false,
+  "zones": [
+    {
+      "name": "example.com",
+      "api_token": "your token here",
+      "records": [
+        {
+          "name": "@",
+          "_types": "record types, A or AAAA",
+          "types": [
+            "A",
+            "AAAA"
+          ],
+          "proxied": false,
+          "_ttl": "1(default) is auto",
+          "ttl": 1,
+          "_create": "if it doesn't exist on cloudflare, automatically create it or not",
+          "create": true
+        },
+        {
+          "name": "fixed",
+          "types": [
+            "A",
+            "AAAA"
+          ],
+          "proxied": false,
+          "fixed_ipv4": "203.0.113.119",
+          "fixed_ipv6": "2001:db8::c7",
+          "create": true
+        },
+        {
+          "name": "command",
+          "types": [
+            "A",
+            "AAAA"
+          ],
+          "proxied": false,
+          "_command_ipv4": "command for return IPv4 address",
+          "command_ipv4": "/usr/local/bin/get-ipv4-address.sh",
+          "_command_ipv6": "command for return IPv6 address",
+          "command_ipv6": "/usr/local/bin/get-ipv6-address.sh",
+          "create": true
+        }
+      ]
+    },
+    {
+      "name": "example.net",
+      "_email_and_api_key": "email and api_key for authentication instead of api_token",
+      "email": "your email here",
+      "api_key": "your key here",
+      "records": [
+        {
+          "name": "tmp",
+          "types": [
+            "A",
+            "AAAA"
+          ],
+          "proxied": true,
+          "create": true,
+          "_remove_on_exit": "if true, remove this record when exiting",
+          "remove_on_exit": true
+        }
+      ]
+    }
+  ],
+  "_command_timeout": "timeout in seconds for each commands",
+  "command_timeout": 30,
+  "_commands": "%MESSAGE% in the command string is replaced by the process or error content.",
+  "commands": {
+    "_on_error": "commands to be executed when an error occurs",
+    "on_error": [
+      "command1 \"%MESSAGE%\"",
+      "command2 \"%MESSAGE%\""
+    ],
+    "_on_update": "commands to be executed when record is updated",
+    "on_update": [
+      "command1 \"%MESSAGE%\""
+    ],
+    "_on_create": "commands to be executed when record is created",
+    "on_create": [
+      "command1 \"%MESSAGE%\""
+    ],
+    "_on_remove": "commands to be executed when record is removed",
+    "on_remove": [
+      "command1 \"%MESSAGE%\""
+    ],
+    "_on_address_check": "commands to be executed when global addresses are checked",
+    "on_address_check": [
+      "command1 \"%MESSAGE%\""
+    ],
+    "_on_address_change": "commands to be executed when global addresses are changed",
+    "on_address_change": [
+      "command1 \"%MESSAGE%\""
+    ],
+    "_on_launch": "commands to be executed when this script is launched",
+    "on_launch": [
+      "command1 \"%MESSAGE%\""
+    ],
+    "_on_exit": "commands to be executed when this script is existing",
+    "on_exit": [
+      "command1 \"%MESSAGE%\""
+    ]
+  }
+}

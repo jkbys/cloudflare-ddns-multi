@@ -1,0 +1,47 @@
+{
+  "interval_sec": 300,
+  "cache_timeout_sec": 3600,
+  "enable_ipv6": true,
+  "zones": [
+    {
+      "name": "example.com",
+      "api_token": "your api token here",
+      "records": [
+        {
+          "name": "@",
+          "types": [
+            "A",
+            "AAAA"
+          ],
+          "proxied": true,
+          "create": true
+        },
+        {
+          "name": "home",
+          "types": [
+            "A",
+            "AAAA"
+          ],
+          "proxied": false,
+          "create": true
+        },
+        {
+          "name": "home-v4",
+          "types": [
+            "A"
+          ],
+          "proxied": false,
+          "create": true
+        },
+        {
+          "name": "home-v6",
+          "types": [
+            "AAAA"
+          ],
+          "proxied": false,
+          "create": true
+        }
+      ]
+    }
+  ]
+}
