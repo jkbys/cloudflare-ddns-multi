@@ -1,3 +1,5 @@
+![Build and push Docker image](https://github.com/jkbys/cloudflare-ddns-multi/workflows/Build%20and%20push%20Docker%20image/badge.svg)
+
 # cloudflare-ddns-multi
 Cloudflare DDNS Multiple Zone/Recoerd Updater - Docker micro image / Shell script
 
