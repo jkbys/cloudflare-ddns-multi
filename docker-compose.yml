@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  cloudflare-ddns-multi:
+    image: jkbys/cloudflare-ddns-multi
+    restart: always
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - ./config.json:/etc/cloudflare-ddns-multi/config.json:ro
+    network_mode: 'host'
