@@ -16,7 +16,6 @@ default_enable_ipv6="false"
 
 ipv4_commands_curl="
 curl -sfL4 -m 5 https://api.ipify.org
-curl -sfL4 -m 5 https://bot.whatismyipaddress.com
 curl -sfL4 -m 5 https://checkip.amazonaws.com
 curl -sfL4 -m 5 https://curlmyip.net
 curl -sfL4 -m 5 https://diagnostic.opendns.com/myip
@@ -52,7 +51,6 @@ curl -sfL6 -m 5 https://ident.me
 curl -sfL6 -m 5 https://tnx.nl/ip
 curl -sfL6 -m 5 https://wgetip.com
 curl -sfL6 -m 5 https://ip.tyk.nu
-curl -sfL6 -m 5 https://ipv6bot.whatismyipaddress.com
 curl -sfL6 -m 5 https://curlmyip.net
 curl -sfL6 -m 5 https://api6.ipify.org
 curl -sfL6 -m 5 https://ifconfig.co
