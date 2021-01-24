@@ -47,7 +47,6 @@ curl -sfL6 -m 5 https://ifconfig.co
 curl -sfL6 -m 5 https://ifconfig.io/ip
 curl -sfL6 -m 5 https://echoip.de
 curl -sfL6 -m 5 https://ident.me
-curl -sfL6 -m 5 https://tnx.nl/ip
 curl -sfL6 -m 5 https://wgetip.com
 curl -sfL6 -m 5 https://ip.tyk.nu
 curl -sfL6 -m 5 https://curlmyip.net
