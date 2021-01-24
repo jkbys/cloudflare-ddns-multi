@@ -35,7 +35,6 @@ curl -sfL4 -m 5 https://ipecho.net/plain
 curl -sfL4 -m 5 https://ipinfo.io/ip
 curl -sfL4 -m 5 https://l2.io/ip
 curl -sfL4 -m 5 https://myexternalip.com/raw
-curl -sfL4 -m 5 https://tnx.nl/ip
 curl -sfL4 -m 5 https://wgetip.com
 "
 
