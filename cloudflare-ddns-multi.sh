@@ -18,7 +18,6 @@ ipv4_commands_curl="
 curl -sfL4 -m 5 https://api.ipify.org
 curl -sfL4 -m 5 https://checkip.amazonaws.com
 curl -sfL4 -m 5 https://curlmyip.net
-curl -sfL4 -m 5 https://diagnostic.opendns.com/myip
 curl -sfL4 -m 5 https://domains.google.com/checkip
 curl -sfL4 -m 5 https://echoip.de
 curl -sfL4 -m 5 https://eth0.me
@@ -26,7 +25,6 @@ curl -sfL4 -m 5 https://icanhazip.com
 curl -sfL4 -m 5 https://ident.me
 curl -sfL4 -m 5 https://ifconfig.co
 curl -sfL4 -m 5 https://ifconfig.io/ip
-curl -sfL4 -m 5 https://ifconfig.me
 curl -sfL4 -m 5 https://inet-ip.info
 curl -sfL4 -m 5 https://ip.tyk.nu
 curl -sfL4 -m 5 https://ipaddr.site
@@ -34,16 +32,13 @@ curl -sfL4 -m 5 https://ipcalf.com
 curl -sfL4 -m 5 https://ipecho.net/plain
 curl -sfL4 -m 5 https://ipinfo.io/ip
 curl -sfL4 -m 5 https://l2.io/ip
-curl -sfL4 -m 5 https://myexternalip.com/raw
 curl -sfL4 -m 5 https://wgetip.com
 "
 
 ipv6_commands_curl="
 curl -sfL6 -m 5 https://api6.ipify.org/
-curl -sfL6 -m 5 https://diagnostic.opendns.com/myip
 curl -sfL6 -m 5 https://icanhazip.com
 curl -sfL6 -m 5 https://ident.me
-curl -sfL6 -m 5 https://ifconfig.co
 curl -sfL6 -m 5 https://ifconfig.io/ip
 curl -sfL6 -m 5 https://echoip.de
 curl -sfL6 -m 5 https://ident.me
