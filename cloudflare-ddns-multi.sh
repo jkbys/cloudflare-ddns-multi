@@ -18,12 +18,10 @@ ipv4_commands_curl="
 curl -sfL4 -m 5 https://api.ipify.org
 curl -sfL4 -m 5 https://checkip.amazonaws.com
 curl -sfL4 -m 5 https://curlmyip.net
-curl -sfL4 -m 5 https://domains.google.com/checkip
 curl -sfL4 -m 5 https://echoip.de
 curl -sfL4 -m 5 https://eth0.me
 curl -sfL4 -m 5 https://icanhazip.com
 curl -sfL4 -m 5 https://ident.me
-curl -sfL4 -m 5 https://ifconfig.co
 curl -sfL4 -m 5 https://ifconfig.io/ip
 curl -sfL4 -m 5 https://inet-ip.info
 curl -sfL4 -m 5 https://ip.tyk.nu
@@ -42,14 +40,13 @@ curl -sfL6 -m 5 https://ident.me
 curl -sfL6 -m 5 https://ifconfig.io/ip
 curl -sfL6 -m 5 https://echoip.de
 curl -sfL6 -m 5 https://ident.me
+curl -sfL6 -m 5 https://ifconfig.io/ip
 curl -sfL6 -m 5 https://wgetip.com
 curl -sfL6 -m 5 https://ip.tyk.nu
 curl -sfL6 -m 5 https://curlmyip.net
 curl -sfL6 -m 5 https://api6.ipify.org
-curl -sfL6 -m 5 https://ifconfig.co
 curl -sfL6 -m 5 https://curlmyip.net
 curl -sfL6 -m 5 https://icanhazip.com
-curl -sfL6 -m 5 https://ifconfig.io/ip
 "
 
 ipv4_commands_drill="
