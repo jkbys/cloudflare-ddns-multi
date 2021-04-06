@@ -15,34 +15,32 @@ default_enable_ipv4="true"
 default_enable_ipv6="false"
 
 ipv4_commands_curl="
-curl -sfL4 -m 5 https://api.ipify.org
-curl -sfL4 -m 5 https://checkip.amazonaws.com
-curl -sfL4 -m 5 https://curlmyip.net
-curl -sfL4 -m 5 https://echoip.de
-curl -sfL4 -m 5 https://eth0.me
-curl -sfL4 -m 5 https://icanhazip.com
-curl -sfL4 -m 5 https://ident.me
-curl -sfL4 -m 5 https://ifconfig.io/ip
-curl -sfL4 -m 5 https://inet-ip.info
-curl -sfL4 -m 5 https://ip.tyk.nu
-curl -sfL4 -m 5 https://ipaddr.site
-curl -sfL4 -m 5 https://ipapi.co/ip
-curl -sfL4 -m 5 https://ipcalf.com
-curl -sfL4 -m 5 https://ipecho.net/plain
-curl -sfL4 -m 5 https://ipinfo.io/ip
-curl -sfL4 -m 5 https://l2.io/ip
-curl -sfL4 -m 5 https://wgetip.com
+curl -sfL4 -m 10 https://checkip.amazonaws.com
+curl -sfL4 -m 10 https://curlmyip.net
+curl -sfL4 -m 10 https://echoip.de
+curl -sfL4 -m 10 https://eth0.me
+curl -sfL4 -m 10 https://icanhazip.com
+curl -sfL4 -m 10 https://ident.me
+curl -sfL4 -m 10 https://ifconfig.io/ip
+curl -sfL4 -m 10 https://inet-ip.info
+curl -sfL4 -m 10 https://ip.tyk.nu
+curl -sfL4 -m 10 https://ipapi.co/ip
+curl -sfL4 -m 10 https://ipcalf.com
+curl -sfL4 -m 10 https://ipecho.net/plain
+curl -sfL4 -m 10 https://ipinfo.io/ip
+curl -sfL4 -m 10 https://l2.io/ip
+curl -sfL4 -m 10 https://wgetip.com
 "
 
 ipv6_commands_curl="
-curl -sfL6 -m 5 https://curlmyip.net
-curl -sfL6 -m 5 https://echoip.de
-curl -sfL6 -m 5 https://icanhazip.com
-curl -sfL6 -m 5 https://ident.me
-curl -sfL6 -m 5 https://ifconfig.io/ip
-curl -sfL6 -m 5 https://ip.tyk.nu
-curl -sfL6 -m 5 https://ipapi.co/ip
-curl -sfL6 -m 5 https://wgetip.com
+curl -sfL6 -m 10 https://curlmyip.net
+curl -sfL6 -m 10 https://echoip.de
+curl -sfL6 -m 10 https://icanhazip.com
+curl -sfL6 -m 10 https://ident.me
+curl -sfL6 -m 10 https://ifconfig.io/ip
+curl -sfL6 -m 10 https://ip.tyk.nu
+curl -sfL6 -m 10 https://ipapi.co/ip
+curl -sfL6 -m 10 https://wgetip.com
 "
 
 ipv4_commands_drill="
