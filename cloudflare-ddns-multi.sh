@@ -201,7 +201,7 @@ run_commands() {
     debug "command: $command"
     command="$command 2>&1"
     output=$(timeout "$command_timeout" sh -c "$command")
-    [ $? -ne 0 ] && log_error "Faild to run command: $command"
+    [ $? -ne 0 ] && log "Faild to run command: $command"
     [ -n "$output" ] && log "Command output: $output"
   done
 }
